@@ -45,11 +45,20 @@ export default defineUserConfig({
     },
     {
       mountPath: "/lucky",
-      analysis: giteeReleasesFilesAnalysis({
+      analysis: githubReleasesFilesAnalysis({
         user: "gdy666",
         repository: "lucky"
       }),
-      downProxy: vercelDownProxy()
+      downProxy: cloudflarePagesDownProxy()
     },
+    {
+      mountPath: "/tabby",
+      analysis: githubReleasesFilesAnalysis({
+        user: "Eugeny",
+        repository: "tabby"
+      }),
+      downProxy: cloudflarePagesDownProxy()
+    },
+
   ])
 })
