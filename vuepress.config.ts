@@ -42,6 +42,14 @@ export default defineUserConfig({
         repository: "HEU_KMS_Activator"
       }),
       downProxy: cloudflarePagesDownProxy()
-    }
+    },
+    {
+      mountPath: "/lucky",
+      analysis: giteeReleasesFilesAnalysis({
+        user: "gdy666",
+        repository: "lucky"
+      }),
+      downProxy: vercelDownProxy()
+    },
   ])
 })
