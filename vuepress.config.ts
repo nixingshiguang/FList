@@ -33,7 +33,7 @@ export default defineUserConfig({
   theme: FileList([
     {
       // 挂载路径
-      mountPath: "/HEU_KMS_Activator",
+      mountPath: "/zbezj-HEU_KMS_Activator",
       // 文件解析器，这里使用githubReleasesFilesAnalysis,可以解析github的release文件
       analysis: githubReleasesFilesAnalysis({
         // 仓库所有者的用户名
@@ -44,7 +44,7 @@ export default defineUserConfig({
       downProxy: cloudflarePagesDownProxy()
     },
     {
-      mountPath: "/lucky",
+      mountPath: "/gdy666-lucky",
       analysis: githubReleasesFilesAnalysis({
         user: "gdy666",
         repository: "lucky"
@@ -52,13 +52,20 @@ export default defineUserConfig({
       downProxy: cloudflarePagesDownProxy()
     },
     {
-      mountPath: "/tabby",
+      mountPath: "/Eugeny-tabby",
       analysis: githubReleasesFilesAnalysis({
         user: "Eugeny",
         repository: "tabby"
       }),
       downProxy: cloudflarePagesDownProxy()
     },
-
+    {
+      mountPath: "/AlistGo-alist",
+      analysis: githubReleasesFilesAnalysis({
+        user: "AlistGo",
+        repository: "alist"
+      }),
+      downProxy: cloudflarePagesDownProxy()
+    },
   ])
 })
